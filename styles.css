@@ -43,7 +43,7 @@ body{
     margin-bottom: 0.5vh;
 }
 .game-img{
-    background-image: url('./assets/cyberpunk.jpg');
+    /* background-image: url('./assets/cyberpunk.jpg'); */
     height: 20vh;
     border-radius: 2vh;
     margin-bottom: 0.5vh;
