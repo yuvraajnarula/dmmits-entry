@@ -1,5 +1,73 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Georama:wght@600&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow-x: hidden;
+}
+body{
+    background-color: #02030C !important;
+}
+:root{
+    --bgcolor: #0B0E16;
+    --textcolor: #B1B0B5;
+}
+/* Games */
+.game-cards{
+    display: flex;
+}
+.games-head{
+    margin-left: 2vh;
+    color: var(--textcolor);
+    font-size: 3vh;
+    font-family: 'Georama', sans-serif;
+    font-weight: 600;
+    margin-bottom: 3vh;
+}
+.game-card{
+    color: var(--textcolor);
+    margin: 2vh;
+    height: 40vh;
+    width: 20vh;
+    background: linear-gradient(to bottom right, var(--bgcolor) 77%, #49490e 100%);
+    backdrop-filter: blur( 100vw );
+    -webkit-backdrop-filter: blur( 100vw );
+    border-radius: 2vh;
+    /* border: 1px solid rgba( 255, 255, 255, 0.18 ); */
+    font-family: 'Georama', sans-serif;
+}
+.game-name{
+    font-size: 2vh;
+    margin-bottom: 0.5vh;
+}
+.game-img{
+    /* background-image: url('./assets/cyberpunk.jpg'); */
+    height: 20vh;
+    border-radius: 2vh;
+    margin-bottom: 0.5vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-clip: border-box;
+}
+
+.checked {
+    color: yellow;
+}
+
+.game-content{
+    padding: 0.5vw;
+}
+.game-pub{
+    font-size:1.3vh;
+    margin-top: 1.5vh;
+}
+.game-type{
+    font-size: 1.3vh;
+}
+
+.game-price{
+    font-size: 2vh;
+    margin-top: 1.5vh;
 }
