@@ -6,11 +6,16 @@
     overflow-x: hidden;
 }
 body{
-    background: #0b0c17;
+    background: #02030C;
     font-family: "Lato", sans-serif;
     color: #eee;
     overflow-x: hidden;
 }
+:root{
+    --bgcolor: #0B0E16;
+    --textcolor: #B1B0B5;
+}
+
 .navbar{
     padding-left: 2.5vw;
     padding-right: 2.5vw;
