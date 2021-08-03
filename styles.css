@@ -16,7 +16,11 @@ body{
     padding-right: 2.5vw;
     padding-top:2.5vw;
 }
-
+.collapse ul {
+    margin-left: 25vw;
+    font-family: 'Lato', sans-serif !important;
+    font-weight: 500 !important;
+}
 .landing-div{
     margin-top: 5vw;
     margin-left: 8.5vw;
@@ -72,6 +76,7 @@ body{
 .landing-div .col-sm-6 .ps-control ul {
     list-style: none;
     display: flex;
+    overflow: hidden;
 }
 .landing-div .col-sm-6 .ps-control ul li{
     margin-left: 0.5vw;
@@ -106,33 +111,112 @@ body{
     margin-left: 6.5vw;
     margin-top: 1.5vw;
 }
-.landing-div .col-sm-5 .hot-game{
-    background-color: #eee;
-    padding: 10px;
-    margin-top: 10px;
-    margin-left: 10px;
-    border-radius: 10px;
-}
 .landing-div .col-sm-5 h3{
     font-weight: 700;
     font-size: 36px;
+    margin-bottom: 5vw;
 }
 .hot-game-1,.hot-game-2,.hot-game-3,.hot-game-4{
     width: 10vw;
     background-color: #eee;
     margin: 10px;
     border-radius: 10px;
+    position: absolute;
 }
 .hot-game-1{
     height: 12.5vw;
 }
 .hot-game-2{
     height: 10vw;
+    margin-left: 12.5vw;
 }
 .hot-game-3{
     height: 10vw;
+    margin-top: 15vw;
 }
 .hot-game-4{
     height: 12.5vw;
-    margin-top: -1.5vw;
+    margin-top: 12.5vw;
+    margin-left: 12.5vw;
+}
+.ps-control span{
+    font-family: 'Material Icons';
+    font-weight: lighter;
+    padding:1px;
+}
+@media only screen and (max-width: 600px) {
+    .collapse ul {
+        margin-left: 2.5vw;
+    }
+    .landing-div{
+        margin-left: 0;
+    }
+    .landing-div .col-sm-6{
+        margin-left: 10vw;
+        width: 75%;
+        height: 40vh;
+    }
+    .landing-div .col-sm-6 .landing-content{
+        padding-top: 10vw;
+    }
+    .landing-div .col-sm-6 .landing-content h1{
+        margin-left: 5vw;
+        font-size: 24px;
+    }
+    .landing-div .col-sm-6 .landing-content h2{
+        font-size: 18px;
+        margin-top: 10vw;
+        margin-left: 15vw;
+    }
+    .landing-div .col-sm-6 .landing-content p{
+        font-size: 12px;
+        margin-left: 5vw;
+        margin-top: 17.5vw;
+    }
+    .landing-div .col-sm-6 .btn{
+        width: 45%;
+        height: 10vw;
+        margin-top: 35vw;
+        margin-left: 12vw;
+        font-size: 12.5px;
+    }
+    .landing-div .col-sm-6 .ps-control {
+        margin-top: -10vw;
+        margin-left: 40vw;
+        font-size: 10px;
+    }
+    .landing-div .col-sm-6 .ps-control ul li{
+        margin-left: 1vw;
+    }
+    .landing-div .col-sm-5{
+        margin-top: 15vw;
+    }
+    .landing-div .col-sm-5 .game-hot{
+        width: 100%;
+        margin-top: 10vw;
+    }
+    .landing-div .col-sm-5 .hot-game-1,.hot-game-2,.hot-game-3,.hot-game-4{
+        width: 35vw;
+        position: absolute;
+    }
+    .landing-div .col-sm-5 .hot-game-1,.hot-game-4{
+        height: 40vw;
+    }
+    .landing-div .col-sm-5 .hot-game-1{
+        margin-left: 2.5vw;
+    }
+    .landing-div .col-sm-5 .hot-game-4{
+        position: absolute;
+        margin-left: 42.5vw;
+        margin-top: 40vw;
+    }
+    .landing-div .col-sm-5 .hot-game-2,.hot-game-3{
+        height: 30vw;
+    }
+    .landing-div .col-sm-5 .hot-game-2{
+        margin-left: 42.5vw;
+    }
+    .landing-div .col-sm-5 .hot-game-3{
+        margin-top: 50vw;
+    }
 }
