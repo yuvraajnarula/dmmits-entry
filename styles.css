@@ -22,9 +22,11 @@ body{
     padding-top:2.5vw;
 }
 .collapse ul {
-    margin-left: 25vw;
+    margin-left: 55vw;
+}
+.collapse ul li{
     font-family: 'Lato', sans-serif !important;
-    font-weight: 500 !important;
+    font-weight: 400 !important;
 }
 .landing-div{
     margin-top: 5vw;
@@ -76,7 +78,7 @@ body{
 .landing-div .col-sm-6 .ps-control{
     position: absolute;
     margin-top: -1.5vw;
-    margin-left: 32.5vw;
+    margin-left: 30vw;
 }
 .landing-div .col-sm-6 .ps-control ul {
     list-style: none;
@@ -149,6 +151,147 @@ body{
     font-weight: lighter;
     padding:1px;
 }
+.games h1{
+    margin-top: 12.5vw;
+    margin-left: 8vw;
+    font-size: 48px;
+    font-weight: 900;
+}
+.games .row:nth-child(2){
+    margin-left: 8vw;
+    margin-top: .5vw;
+}
+::-webkit-scrollbar{
+    background: transparent;
+    width: 7.5px;
+
+}
+::-webkit-scrollbar-thumb{
+    background: rgb(36, 36, 36);
+}
+:root{
+    --bgcolor: #0B0E16;
+    --textcolor: #B1B0B5;
+}
+.game-cards{
+    display: flex;
+}
+.games-head{
+    margin-left: 2vh;
+    font-size: 3vh;
+    font-weight: 600;
+    margin-bottom: 3vh;
+}
+.game-card{
+    color: var(--textcolor);
+    margin: 2vh;
+    height: 40vh;
+    width: 20vh;
+    background: linear-gradient(to bottom right, var(--bgcolor) 77%, #49490e 140%);
+    backdrop-filter: blur( 100vw );
+    -webkit-backdrop-filter: blur( 100vw );
+    border-radius: 1.5vh;
+    /* border: 1px solid rgba( 255, 255, 255, 0.18 ); */
+    font-family: 'Lato', sans-serif;
+}
+.game-name{
+    font-size: 2vh;
+    margin-top: 1.5vh;
+    margin-left: 1vh;
+    color: #eee;
+}
+.game-img{
+    /* background-image: url('./assets/cyberpunk.jpg'); */
+    height: 20vh;
+    border-radius: 2vh;
+    margin-bottom: 0.5vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-clip: border-box;
+}
+.games span {
+    font-size: 10px;
+}
+.game-rating{
+    margin-left: 1vh;
+}
+.checked {
+    color: yellow;
+}
+
+.game-content{
+    padding: 0.5vw;
+}
+.game-pub{
+    font-size:1.4vh;
+    margin-top: 1.5vh;
+    margin-left: 1vh;
+}
+.game-type{
+    font-size: 1.4vh;
+    margin-left: 1vh;
+}
+
+.game-price{
+    font-size: 2vh;
+    margin-top: .75vh;
+    margin-left: 1vh;
+    color: #eee;
+}
+.products {
+    width: 100%;
+    margin-top: 10vw;
+}
+.products h1{
+    text-align:  center;
+    font-size: 7.5vh;
+    font-weight: 900;
+}
+.products .row{
+    margin-top: 5vh;
+    padding-left: 7.5vw;
+    padding-right: 7.5vw;
+    margin-bottom: 5vh;
+}
+.products .row .card{
+    background: rgba(15,15,15,0.8);
+    border-radius: 5vh;
+    backdrop-filter: saturation(180%) blur(100%);
+}
+.products .row .card .card-content{
+    margin-top: 1.5vh;
+    padding: 1vh;
+}
+.products .row .card .card-content p{
+    margin-left: 2.5vh;
+    font-weight: light;
+}
+.products .row .card .card-content .btn{
+    background: #eee;
+    color: #0B0E16;
+    border-radius: 5vh;
+    font-weight: 400;
+    width: 70%;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    margin-left: 5vh;
+}
+.products .row .card .card-content .img-gal{
+  margin-top:1.5vh;
+  margin-bottom: 1.5vh;  
+}
+.products .row .card .card-content .img-gal ul {
+    list-style: none; 
+    display: flex;
+    margin-left: -2.5vh;
+}
+.products .row .card img{
+    margin-top: 5vh;
+}
+.products .row .card .card-content .img-gal img{
+    width: 100px;
+    cursor: pointer;
+}
 @media only screen and (max-width: 600px) {
     .collapse ul {
         margin-left: 2.5vw;
@@ -184,6 +327,7 @@ body{
         margin-top: 35vw;
         margin-left: 12vw;
         font-size: 12.5px;
+        border-radius: 10vh;
     }
     .landing-div .col-sm-6 .ps-control {
         margin-top: -10vw;
@@ -223,5 +367,27 @@ body{
     }
     .landing-div .col-sm-5 .hot-game-3{
         margin-top: 50vw;
+    }
+    .games h1{
+        margin-top:85vw;
+        margin-left: 10vw;
+    }
+    .game-cards{
+        display: block;
+    }
+    .products .row{
+        margin-top: 10vh;
+    }
+    .products .card{
+        margin-bottom: 5vh;
+    }
+    .products .card .img-gal {
+        margin-left: -5vh;
+    }
+    .products .card .img-gal img{
+        width: 50px;
+    }
+    .products .product-card .btn{
+        margin-left: 6vh!important;
     }
 }

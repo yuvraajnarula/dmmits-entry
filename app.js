@@ -1,3 +1,16 @@
+//img product slider
+const prod = document.querySelector('.prod');
+const prod1 = document.querySelector('.prod1');
+const prod2 = document.querySelector('.prod2');
+function changeProdImg(image){
+    prod.src = image.src;
+}
+function changeProdImg1(image){
+    prod1.src = image.src;
+}
+function changeProdImg2(image){
+    prod2.src = image.src;
+}
 
 // fetch("games.json").then(function (response) {
 //     return response.json
@@ -36,6 +49,7 @@ var gameContainer = document.getElementById('gameCards')
 for (i=0; i<game.length; i++) {
     var div = document.createElement('div');
     div.innerHTML= `
+    <div class="col=md-3">
     <div class="game-card">
     <div class="game-content">
     <div class="game-img"style="background-image: url('./assets/cyberpunk.jpg');"></div>
@@ -53,6 +67,7 @@ for (i=0; i<game.length; i++) {
                         <div class="game-price">${data[i].price}</div>
                     </div>
                     </div>
+    </div>
     `
     gameContainer.appendChild(div);
 }
