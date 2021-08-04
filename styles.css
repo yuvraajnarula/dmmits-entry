@@ -378,6 +378,46 @@ body{
     margin-left:2vh;
     font-weight: light;
 }
+.rating {
+    margin-top: 20vh;
+}
+.rating h1{
+    text-align: center;
+    font-size: 48px;
+    font-weight: 900;
+}
+.rating p {
+    font-size: 18px;
+    text-align: center;
+    font-weight: light;
+}
+.svg-user-review{
+    margin-top: 5vh;
+}
+.svg-user-review img{
+    position: absolute;
+}
+.svg-user-review svg{
+    width: 80%;
+}
+.svg-user-review p{
+    margin-top: 15vh;
+    position: absolute;
+    font-size: 24px;
+    font-weight: 700;
+}
+.svg-user-review i{
+    position: absolute;
+    font-size: 30px;
+    color: rgba(255,255,255)
+}
+.svg-user-review .fa-quote-left{
+    margin-top: 0vh;
+}
+.svg-user-review .fa-quote-right{
+    margin-top: 35vh;
+    margin-left: 40vh;
+}
 @media only screen and (max-width: 600px) {
     .collapse ul {
         margin-left: 2.5vw;

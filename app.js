@@ -77,5 +77,26 @@ svgBlob.innerHTML=`
         <path fill="#D0E2FF" d="M36.5,22.2C22.3,45.7,-31.4,47.5,-44.1,24.8C-56.8,2.2,-28.4,-44.9,-1.5,-45.7C25.4,-46.6,50.7,-1.3,36.5,22.2Z" transform="translate(100 100)" />
     </svg>
 `;
-svgBlob.classList.add('svg-blob')
+svgBlob.classList.add('svg-blob');
 square.appendChild(svgBlob);
+const userSvgNinja = document.querySelector('.svg-user-review');
+const userSvg = document.createElement('div');
+userSvg.innerHTML= `
+    <div class="col-sm-6">
+        <img src="./assets/user-review-3.png" alt="">
+        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <path fill="#A7F0BA" d="M60.8,-49.6C73.7,-32.2,75.8,-7.2,70.2,15.6C64.7,38.5,51.6,59.3,32.9,68.2C14.2,77.2,-10.2,74.4,-28.9,63.9C-47.7,53.4,-60.8,35.1,-67.1,13.6C-73.4,-7.9,-72.8,-32.8,-60.5,-50C-48.1,-67.2,-24.1,-76.8,-0.1,-76.8C23.9,-76.7,47.8,-66.9,60.8,-49.6Z" transform="translate(100 100)" />
+        </svg>
+    </div>
+    <div class="col-sm-5">
+        <i class="fa fa-quote-left"></i>
+        <p>
+            Video games feel different on the <br> 
+            PlayStation 5 and that’s a good thing 
+        </p>
+        <i class="fa fa-quote-right"></i>
+    </div>
+    `
+;
+userSvg.classList.add('row');
+userSvgNinja.appendChild(userSvg);
