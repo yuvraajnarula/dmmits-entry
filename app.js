@@ -11,7 +11,7 @@ function changeProdImg1(image){
 function changeProdImg2(image){
     prod2.src = image.src;
 }
-
+//game slider
 // fetch("games.json").then(function (response) {
 //     return response.json
 // }).then( function (data){
@@ -49,7 +49,6 @@ var gameContainer = document.getElementById('gameCards')
 for (i=0; i<game.length; i++) {
     var div = document.createElement('div');
     div.innerHTML= `
-    <div class="col=md-3">
     <div class="game-card">
     <div class="game-content">
     <div class="game-img"style="background-image: url('./assets/cyberpunk.jpg');"></div>
@@ -67,8 +66,16 @@ for (i=0; i<game.length; i++) {
                         <div class="game-price">${data[i].price}</div>
                     </div>
                     </div>
-    </div>
     `
     gameContainer.appendChild(div);
 }
 }
+const square = document.querySelector('.square');
+const svgBlob = document.createElement('div');
+svgBlob.innerHTML=`
+    <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg%22%3E">
+        <path fill="#D0E2FF" d="M36.5,22.2C22.3,45.7,-31.4,47.5,-44.1,24.8C-56.8,2.2,-28.4,-44.9,-1.5,-45.7C25.4,-46.6,50.7,-1.3,36.5,22.2Z" transform="translate(100 100)" />
+    </svg>
+`;
+svgBlob.classList.add('svg-blob')
+square.appendChild(svgBlob);
