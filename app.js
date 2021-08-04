@@ -23,25 +23,56 @@ const data = [
     {
         "id": "1",
         "name": "CyberPunk 2077",
-        "pub": "Doe",
+        "pub": "Microsoft Corporation",
         "categories": "RPC,ACTION",
-        "price": "$49.99"
+        "price": "$49.99",
+        "image": "./assets/cyberpunk.jpg",
     },
     {
         "id": "2",
-        "name": "Mary",
+        "name": "The Last of Us Part 2",
         "pub": "Peterson",
         "categories": "RPC,ACTION",
-        "price": "$49.99"
+        "price": "$49.99",
+        "image": "./assets/last.png",
     },
     {
         "id": "3",
-        "name": "George",
+        "name": "Spider Man",
         "pub": "Hansen",
         "categories": "RPC,ACTION",
-        "price": "$49.99"
+        "price": "$49.99",
+        "image": "./assets/spiderman.jpeg",
+
+    },
+    {
+        "id": "4",
+        "name": "Assasin's Creed: Vaholla",
+        "pub": "Hansen",
+        "categories": "RPC,ACTION",
+        "price": "$49.99",
+        "image": "./assets/creed.jpeg",
+
+    },
+    {
+        "id": "5",
+        "name": "Imortals Fenyx Rising",
+        "pub": "Hansen",
+        "categories": "RPC,ACTION",
+        "price": "$49.99",
+        "image": "./assets/imortals.jpeg",
+
+    },
+    {
+        "id": "6",
+        "name": "Call of Duty: Cold War",
+        "pub": "Hansen",
+        "categories": "RPC,ACTION",
+        "price": "$49.99",
+        "image": "./assets/cod.jpeg",
 
     }
+
 ]
 appendGames(data)
 function appendGames(game){
@@ -51,7 +82,7 @@ for (i=0; i<game.length; i++) {
     div.innerHTML= `
     <div class="game-card">
     <div class="game-content">
-    <div class="game-img"style="background-image: url('./assets/cyberpunk.jpg');"></div>
+    <div class="game-img"style="background-image: url('${data[i].image}');"></div>
                         <div class="game-name">${data[i].name}
                         </div>
                         <div class="game-rating">
