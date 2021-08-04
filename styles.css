@@ -418,6 +418,39 @@ body{
     margin-top: 35vh;
     margin-left: 40vh;
 }
+.counter-value{
+    font-size: 20vh;
+    position: absolute;
+    font-weight: 900;
+    margin-left: 57.5vh;
+    margin-top:15vh
+}
+.circle{
+    height: 25vh;
+    width: 25vh;
+    border-radius: 100%;
+    background-color: #FF6584;
+    position: absolute;
+    margin-left: 2.5vh;
+}
+.cloud-1{
+    position: absolute;
+    margin-top: 10vh;
+    margin-left: 20vh;
+}
+.cloud-2{
+    position: absolute;
+    margin-top:25vh;
+    margin-left: 10vh;
+    transform: translateX(-360deg);
+}
+.jet{
+    transform: scale(0.75);
+    margin-left: 70vh;
+}
+.hot-air{
+    margin-left: 100vh;
+}
 @media only screen and (max-width: 600px) {
     .collapse ul {
         margin-left: 2.5vw;
@@ -565,6 +598,24 @@ body{
         transform: scale(0.75);
     }
     .jet{
-        transform: scale(0.75) rotate(-15deg);
+        transform: scale(0.45) rotate(5deg);
+        margin-left: 0;
+        margin-top: 85vh;
+    }
+    .hot-air{
+        margin-left: 0;
+    }
+    .circle{
+        transform: scale(0.5);
+    }
+    .cloud-1{
+        transform: scale(0.25);
+    }
+    .cloud-2{
+        transform: scale(0.35);
+    }
+    .counter-value{
+        margin-left: 15vh;
+        margin-top: 50vh;
     }
 }
