@@ -91,20 +91,19 @@ body{
     animation-delay: 0.1s;
     animation-fill-mode: forwards;
 }
-.landing-div .col-sm-6 .ps-img{
-    position: absolute;
-}
 .landing-div .col-sm-6 .ps-img img:first-child{
     margin-top: 10vw;
     position: absolute;
     margin-left: 25vw;
-    z-index: 100;
+    z-index: 1050;
+    display: block;
 }
 .landing-div .col-sm-6 .ps-img img:nth-child(2){
     margin-top: 16.5vw;
     position: absolute;
     margin-left: 27.5vw;
     transform: rotate(20deg);
+    z-index: 1050;
 }
 @keyframes ps-animation {
     from{
@@ -408,5 +407,15 @@ body{
         margin-left: 0;
         margin-top:-55vh;
         height: 150%;
+    }
+    .landing-div .col-sm-6 .ps-img img:nth-child(1){
+        margin-top: -10vh;
+        margin-left: -5vh;
+        width: 25%;
+    }
+    .landing-div .col-sm-6 .ps-img img:nth-child(2){
+        transform: scale(0.75) rotate(10deg);
+        margin-top:25vh ;
+        margin-left: 25vh;
     }
 }
