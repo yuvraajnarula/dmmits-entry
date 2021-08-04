@@ -159,7 +159,7 @@ body{
     font-weight: 900;
 }
 .games .row:nth-child(2){
-    margin-left: 8vw;
+    margin-left: 6vw;
     margin-top: .5vw;
 }
 ::-webkit-scrollbar{
@@ -185,7 +185,7 @@ body{
 }
 .game-card{
     color: var(--textcolor);
-    margin: 2vh;
+    margin: 1vh;
     height: 50vh;
     width: 30vh;
     background: linear-gradient(to bottom right, var(--bgcolor) 77%, #49490e 140%);
@@ -200,6 +200,9 @@ body{
     margin-top: 1.5vh;
     margin-left: 1vh;
     color: #eee;
+}
+.swiper-scrollbar{
+    color: var(--textcolor);
 }
 .game-img{
     /* background-image: url('./assets/cyberpunk.jpg'); */

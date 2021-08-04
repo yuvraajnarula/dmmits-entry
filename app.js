@@ -71,7 +71,52 @@ const data = [
         "price": "$49.99",
         "image": "./assets/cod.jpeg",
 
-    }
+    },
+    {
+        "id": "7",
+        "name": "Call of Duty: Cold War",
+        "pub": "Hansen",
+        "categories": "RPC,ACTION",
+        "price": "$49.99",
+        "image": "./assets/cod.jpeg",
+
+    },
+    {
+        "id": "8",
+        "name": "Call of Duty: Cold War",
+        "pub": "Hansen",
+        "categories": "RPC,ACTION",
+        "price": "$49.99",
+        "image": "./assets/cod.jpeg",
+
+    },
+    {
+        "id": "9",
+        "name": "Call of Duty: Cold War",
+        "pub": "Hansen",
+        "categories": "RPC,ACTION",
+        "price": "$49.99",
+        "image": "./assets/cod.jpeg",
+
+    },
+    {
+        "id": "10",
+        "name": "Call of Duty: Cold War",
+        "pub": "Hansen",
+        "categories": "RPC,ACTION",
+        "price": "$49.99",
+        "image": "./assets/cod.jpeg",
+
+    },
+    {
+        "id": "11",
+        "name": "Call of Duty: Cold War",
+        "pub": "Hansen",
+        "categories": "RPC,ACTION",
+        "price": "$49.99",
+        "image": "./assets/cod.jpeg",
+
+    },
 
 ]
 appendGames(data)
@@ -101,6 +146,13 @@ for (i=0; i<game.length; i++) {
     gameContainer.appendChild(div);
 }
 }
+// Swiper
+var swiper = new Swiper(".mySwiper", {
+    scrollbar: {
+      el: ".swiper-scrollbar",
+      hide: true,
+    },
+  });
 const square = document.querySelector('.square');
 const svgBlob = document.createElement('div');
 svgBlob.innerHTML=`
