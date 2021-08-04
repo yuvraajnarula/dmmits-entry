@@ -495,8 +495,9 @@ body{
         margin-top: 50vw;
     }
     .games h1{
-        margin-top:85vw;
+        margin-top:95vw;
         margin-left: 10vw;
+        font-size: 36px;
     }
     .game-cards{
         display: block;
@@ -532,5 +533,38 @@ body{
         transform: scale(0.75) rotate(10deg);
         margin-top:25vh ;
         margin-left: 25vh;
+    }
+    .updates .col-sm-7{
+        position: relative;
+        margin-top: 20vh;
+        margin-left:1.5vh;
+    }
+    .updates .col-sm-7 .col-sm-4 {
+        width: 75%;
+    }
+    .svg-user-review svg{
+        width: 50%;
+        margin-left: 15vh;
+    }
+    .svg-user-review img{
+        width: 75%;
+        margin-left: 14.5vh;
+    }
+    .svg-user-review p{
+        font-size: 15px;
+        text-align: center;
+        margin-top: 2.5vh;
+        padding-bottom: 2.5vh;
+        margin-left: 8.5vh;
+        position: absolute;
+    }
+    .svg-user-review i{
+        display: none;
+    }
+    .rating .para {
+        transform: scale(0.75);
+    }
+    .jet{
+        transform: scale(0.75) rotate(-15deg);
     }
 }
