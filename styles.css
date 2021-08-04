@@ -302,7 +302,14 @@ body{
     margin-top: -5vh;
     margin-left: 10vh;
 }
-
+.updates{
+    margin-top:10vw;
+}
+.updates h1{
+    margin-left: 7.5vw;
+    font-size: 40px;
+    font-weight: 900;
+}
 @media only screen and (max-width: 600px) {
     .collapse ul {
         margin-left: 2.5vw;
