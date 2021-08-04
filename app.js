@@ -100,3 +100,13 @@ userSvg.innerHTML= `
 ;
 userSvg.classList.add('row');
 userSvgNinja.appendChild(userSvg);
+//counter trigger on scroll
+const userScrollDiv = document.querySelector('.user-rating');
+const userDiv = document.createElement('div');
+userDiv.classList.add('user-rate-scroll');
+userDiv.innerHTML = 
+`
+    <div class="counter-value" data-count="4.5">0.0</div>
+`;
+userScrollDiv.appendChild(userDiv);
+const userInitialValue = 0.0;
