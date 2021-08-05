@@ -125,8 +125,8 @@ var gameContainer = document.getElementById('gameCards')
 for (i=0; i<game.length; i++) {
     var div = document.createElement('div');
     div.innerHTML= `
-    <div class="game-card swiper-slide">
-    <div class="game-content">
+    <div class="game-card ">
+    <div class="game-content swiper-slide">
     <div class="game-img"style="background-image: url('${data[i].image}');"></div>
                         <div class="game-name">${data[i].name}
                         </div>
@@ -142,17 +142,22 @@ for (i=0; i<game.length; i++) {
                         <div class="game-price">${data[i].price}</div>
                     </div>
                     </div>
+    </div>
     `
     gameContainer.appendChild(div);
 }
 }
-// Swiper
-var swiper = new Swiper(".swiper-container", {
+Swiper
+var swiper = new Swiper(".swiper-container  ", {
     direction: 'horizontal',
-    loop: true,
+    loop: false,
+    speed:300,
+    slidesperView: 1,
+    freemode: false,
+    createElements: true,
     scrollbar: {
       el: ".swiper-scrollbar",
-      hide: true,
+      hide: false,
     },
   });
 
