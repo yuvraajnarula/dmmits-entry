@@ -63,8 +63,8 @@
                             </button>
                         </div>
                         <div class="ps-img">
-                            <img src="./assets/console.png" width="200">
-                            <img src="./assets/controller.png" width="150" height="75">
+                            <img src="./assets/console.png" data-tilt data-tilt-scale="1.2" data-glare width="200">
+                            <img src="./assets/controller.png" width="150" height="75" data-tilt data-tilt-scale="1.2" data-glare width="200">
                         </div>
                     </div>
                     <div class="ps-control">
@@ -90,12 +90,12 @@
                     <h3>Hot Picks</h3>
                     <div class="game-hot">
                         <div class="row">
-                            <div class="hot-game-1"></div>
-                            <div class="hot-game-2"></div>
+                            <div class="hot-game-1" data-tilt data-tilt-scale="1.25" ></div>
+                            <div class="hot-game-2" data-tilt data-tilt-scale="1.1"></div>
                         </div>
                         <div class="row">
-                            <div class="hot-game-3"></div>
-                            <div class="hot-game-4"></div>
+                            <div class="hot-game-3" data-tilt data-tilt-scale="1.1"></div>
+                            <div class="hot-game-4" data-tilt data-tilt-scale="1.25"></div>
                         </div>
                     </div>
                 </div>
@@ -107,8 +107,8 @@
         <div class="row">
             <h1 class="games-head">Discover Games</h1>
         </div>
-        <div class="row swiper-container mySwiper">
-            <div class="col-md-12 col-lg-12 game-cards swiper-wrapper" id="gameCards">
+        <div class=" swiper-container mySwiper">
+            <div class=" game-cards swiper-wrapper" id="gameCards">
             </div>
         </div>
     </div>
@@ -119,7 +119,7 @@
                 <div class="col-sm-4">
                     <div class="product-card">
                         <div class="card">
-                            <img src="./assets/logo.png" class='prod' alt="">
+                            <img src="./assets/logo.png" data-tilt data-tilt-scale="1.2" class='prod' alt="">
                             <div class="card-content">
                                 <p>
                                     Lorem ipsum dolor sit amet elit. Porro <br>
@@ -150,7 +150,7 @@
                 <div class="col-sm-4">
                     <div class="product-card">
                         <div class="card">
-                            <img src="./assets/logo.png" class='prod1' alt="">
+                            <img src="./assets/logo.png" data-tilt data-tilt-scale="1.2" class='prod1' alt="">
                             <div class="card-content">
                                 <p>
                                     Lorem ipsum dolor sit amet elit. Porro <br>
@@ -181,7 +181,7 @@
                 <div class="col-sm-4">
                     <div class="product-card">
                         <div class="card">
-                            <img src="./assets/logo.png" class='prod2' alt="">
+                            <img src="./assets/logo.png" data-tilt data-tilt-scale="1.2" class='prod2' alt="">
                             <div class="card-content">
                                 <p>
                                     Lorem ipsum dolor sit amet elit. Porro <br>
@@ -233,7 +233,7 @@
                         Participate
                     </button>
                     <br>
-                    <img src="./assets/controller.png" width="150" alt="">
+                    <video src="./assets/tournament.mp4" autoplay class='video' muted></video>
                 </div>
             </div>
             <div class="col-sm-7">
@@ -293,7 +293,9 @@
 
         </div>
         <div class="user-card">
-            <!--slick js slider-->
+            <div class="swiper-container review-slide">
+                <div class="swiper-wrapper">
+              </div>
         </div>
     </div>
     <div class="pg-footer">
@@ -391,25 +393,17 @@
                     </div>
                 </div>
             </div>
-            <div class="footer-copyright">
-                <div class="footer-copyright-wrapper">
-                    <p class="footer-copyright-text">
-                        <a class="footer-copyright-link" href="#" target="_self"> ©2021. | Designed By: Aayan &amp;
-                            Yuvraaj |
-                            All rights reserved. </a>
-                    </p>
-                </div>
-            </div>
         </footer>
     </div>
 </body>
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.0.3/tilt.jquery.min.js"
-    integrity="sha512-14AZ/DxUrlF26z6v7egDkpJHKyJRn/7ue2BgpWZ/fmqrqVzf4PrQnToy99sHmKwzKev/VZ1tjPxusuTV/n8CcQ=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="./js/vanilla-tilt.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
 </script>
-<script src="./app.js"></script>
+<script src="./js/app.js"></script>
 
+</html>
 </html>
