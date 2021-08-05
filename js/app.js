@@ -183,7 +183,7 @@ userSvg.innerHTML= `
         <i class="fa fa-quote-left"></i>
         <p>
             Video games feel different on the <br> 
-            PlayStation 5 and that’s a good thing 
+            CNSLE and that’s a good thing 
         </p>
         <i class="fa fa-quote-right"></i>
     </div>
@@ -214,9 +214,9 @@ exploreDiv.innerHTML = `
                 New Cool
             </h3>
             <p>
-                Lorem ipsum dolor, si harum maxime inventore maiores blanditiis  <br>         
-                inventore maiores blanditiis Lorem ipsum dolor, si harum maxime  <br>
-                inventore maiores blanditiis
+                New generation as they say surpasses the old one   <br>         
+                here we surpass old generation by the coolest acessories  <br>
+                Coming soon in the stores near you!!
             </p>
 
         </div>
