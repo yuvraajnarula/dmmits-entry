@@ -198,3 +198,43 @@ $(document).ready(function(){
         time: 1200.
     })
 })
+//landing explore modal
+const exploreBtn = document.querySelector('.xp-btn');
+const modalDiv = document.createElement('div');
+const exploreDiv = document.createElement('div');
+const landingDiv = document.querySelector('.landing-div');
+modalDiv.classList.add('explore-modal');
+exploreDiv.classList.add('explore-modal-div');
+exploreDiv.innerHTML = `
+    <div class='row'>
+        <div class='col-sm-6'>
+            <h3 class='modal-close'>+</h3>
+            <h3>
+                New Gen
+                New Cool
+            </h3>
+            <p>
+                Lorem ipsum dolor, si harum maxime inventore maiores blanditiis  <br>         
+                inventore maiores blanditiis Lorem ipsum dolor, si harum maxime  <br>
+                inventore maiores blanditiis
+            </p>
+
+        </div>
+        <div class='col-sm-4'>
+            <img src='https://media.discordapp.net/attachments/741244174736556076/872162977929891850/unknown.png'>
+            <img src='https://media.discordapp.net/attachments/741244174736556076/872163171295698974/unknown.png'>
+            <video src = './assets/ps5-disc.mp4' autoplay loop></video>
+            <img src='./assets/motion-stick.png' class='stick'>
+            <img src='./assets/ps5-cam.png' class='ps-cam' >
+        </div>
+    </div>
+`;
+modalDiv.appendChild(exploreDiv);
+landingDiv.appendChild(modalDiv);
+const closeExploreBtn = document.querySelector('.modal-close');
+exploreBtn.addEventListener('click',()=>{
+    modalDiv.style.display='block';
+})
+closeExploreBtn.addEventListener('click',()=>{
+    modalDiv.style.display ='none';
+})
