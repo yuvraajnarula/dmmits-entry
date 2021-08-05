@@ -70,6 +70,7 @@ body{
     background:#0b0c17;
     color: #eee;
     transition: all 0.5s;
+    border-radius: 2.5vh;
 }
 .landing-div .col-sm-6 .btn:hover{
     transform: translateY(-5px);
@@ -126,31 +127,45 @@ body{
 }
 .hot-game-1,.hot-game-2,.hot-game-3,.hot-game-4{
     width: 10vw;
-    background-color: #eee;
     margin: 10px;
     border-radius: 2.5vh;
     position: absolute;
+
 }
 .hot-game-1{
     height: 12.5vw;
+    background-size: cover !important;
+    background: url('./assets/village-game.png');
+    cursor: pointer;
 }
 .hot-game-2{
     height: 10vw;
     margin-left: 12.5vw;
+    background-size: cover !important; 
+    background: url('./assets/fifa-game.jpg') ;
 }
 .hot-game-3{
     height: 10vw;
     margin-top: 15vw;
+    background-size: cover !important;
+    background : url('./assets/last-of-us.png');
 }
 .hot-game-4{
     height: 12.5vw;
     margin-top: 12.5vw;
     margin-left: 12.5vw;
+    background-size: cover !important;
+    background: url('./assets/hitman.jpg');
 }
 .ps-control span{
     font-family: 'Material Icons';
     font-weight: lighter;
     padding:1px;
+}
+.video{
+    width: 75%;
+    height: 25vh;
+    margin-top:10vh;
 }
 .games h1{
     margin-top: 12.5vw;
@@ -170,12 +185,11 @@ body{
 ::-webkit-scrollbar-thumb{
     background: rgb(36, 36, 36);
 }
-:root{
-    --bgcolor: #0B0E16;
-    --textcolor: #B1B0B5;
-}
 .game-cards{
     display: flex;
+}
+.swiper-container{
+    width: 400vh;
 }
 .games-head{
     margin-left: 2vh;
@@ -187,12 +201,10 @@ body{
     color: var(--textcolor);
     margin: 1vh;
     height: 50vh;
-    width: 30vh;
-    background: linear-gradient(to bottom right, var(--bgcolor) 77%, #49490e 140%);
-    backdrop-filter: blur( 100vw );
-    -webkit-backdrop-filter: blur( 100vw );
+    width: 20vh;
+    background: rgba(15,15,15,0.8);
+    backdrop-filter: saturation(150%) blur(10px);
     border-radius: 1.5vh;
-    /* border: 1px solid rgba( 255, 255, 255, 0.18 ); */
     font-family: 'Lato', sans-serif;
 }
 .game-name{
@@ -362,7 +374,7 @@ body{
     color :#0b0c17;
     border-radius: 2.5vh;
     width: 45%;
-    margin-left: 5.5vh;
+    margin-left: 5.25vh;
 }
 .updates .col-sm-4 img{
     margin-top: 7.5vh;
@@ -389,11 +401,13 @@ body{
     text-align: center;
     font-size: 48px;
     font-weight: 900;
+    margin-bottom: 5vh;
 }
 .rating p {
     font-size: 18px;
     text-align: center;
     font-weight: light;
+    padding-bottom: 5vh;
 }
 .svg-user-review{
     margin-top: 5vh;
@@ -453,7 +467,12 @@ body{
     margin-left: 70vh;
 }
 .hot-air{
-    margin-left: 100vh;
+    margin-left: 105vh;
+}
+.review-card .card{
+    height: 10vh;
+    background: rgba(15,15,15,0.8);
+    backdrop-filter: saturation(150%) blur(10px);
 }
 @media only screen and (max-width: 600px) {
     .collapse ul {
@@ -535,6 +554,9 @@ body{
         margin-top:95vw;
         margin-left: 10vw;
         font-size: 36px;
+    }
+    .video{
+        width: 75%;
     }
     .game-cards{
         display: block;
@@ -704,21 +726,21 @@ body{
   }
   
   .footer-call-to-action-description {
-      color: #fffff2;
+      color: #0b0c17;
       margin-top: 10px;
       margin-bottom: 20px;
   }
   .footer-call-to-action-button:hover {
-      background-color: #fffff2;
-      color: #00bef0;
+      background-color: #eee;
+      color: #0b0c17;
   }
   .button:last-of-type {
       margin-right: 0;
   }
   .footer-call-to-action-button {
-      background-color: #027b9a;
+      background-color: #eee;
       border-radius: 21px;
-      color: #fffff2;
+      color: #0b0c17;
       display: inline-block;
       font-size: 11px;
       font-weight: 900;
